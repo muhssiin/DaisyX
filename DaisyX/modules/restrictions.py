@@ -55,7 +55,7 @@ async def kick_user_cmd(message, chat, user, args, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["kick_DaisyX"])
+        await message.reply(strings["kick_MCube"])
         return
 
     elif user_id == message.from_user.id:
@@ -114,7 +114,7 @@ async def mute_user_cmd(message, chat, user, args, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["mute_DaisyX"])
+        await message.reply(strings["mute_MCube"])
         return
 
     elif user_id == message.from_user.id:
@@ -192,7 +192,7 @@ async def unmute_user_cmd(message, chat, user, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["unmute_DaisyX"])
+        await message.reply(strings["unmute_MCube"])
         return
 
     elif user_id == message.from_user.id:
@@ -227,7 +227,7 @@ async def ban_user_cmd(message, chat, user, args, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["ban_DaisyX"])
+        await message.reply(strings["ban_MCube"])
         return
 
     elif user_id == message.from_user.id:
@@ -305,7 +305,7 @@ async def unban_user_cmd(message, chat, user, strings):
     user_id = user["user_id"]
 
     if user_id == BOT_ID:
-        await message.reply(strings["unban_DaisyX"])
+        await message.reply(strings["unban_MCube"])
         return
 
     elif user_id == message.from_user.id:
