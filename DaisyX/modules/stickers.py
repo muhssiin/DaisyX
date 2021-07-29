@@ -197,7 +197,7 @@ def find_instance(items, class_or_tuple):
     return None
 
 
-DEFAULTUSER = "DaisyX"
+DEFAULTUSER = "MCubeStkr"
 FILLED_UP_DADDY = "Invalid pack selected."
 
 
@@ -206,7 +206,7 @@ async def get_sticker_emoji(event):
     try:
         final_emoji = reply_message.media.document.attributes[1].alt
     except:
-        final_emoji = "😎"
+        final_emoji = "🔥"
     return final_emoji
 
 
@@ -227,8 +227,8 @@ async def _(event):
     userid = event.sender_id
     first_name = user.first_name
     packname = f"{first_name}'s Sticker Vol.{pack}"
-    packshortname = f"DaisyX_stickers_{userid}"
-    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if Daisy steal it")
+    packshortname = f"MCube_stickers_{userid}"
+    kanga = await event.reply("Hello, This Sticker Looks Noice. Mind if MCube steal it")
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Stickers.png"
     file = await event.client.download_file(reply_message.media)
@@ -237,7 +237,7 @@ async def _(event):
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await ubot.upload_file(file, file_name=file_ext_ns_ion)
         packname = f"{first_name}'s Animated Sticker Vol.{pack}"
-        packshortname = f"DaisyX_animated_{userid}"
+        packshortname = f"MCube_animated_{userid}"
     elif not is_message_image(reply_message):
         await kanga.edit("Oh no.. This Message type is invalid")
         return
